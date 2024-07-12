@@ -75,8 +75,12 @@ export GREEN_DATE_COLUMN_NAME= "lpep_pickup_datetime"
 ### Running the Pipeline
 
 #### Step 1: Determine the Partition Range
+0. **Set Dagster_home env variable**
 
-1. **Run the Dagster Job to Get the Partition Range**:
+    ```sh
+    export DAGSTER_HOME=$PWD    
+    ```
+2. **Run the Dagster Job to Get the Partition Range**:
 
     ```sh
     dagster job execute -f dagster_module/pipelines.py -j determine_range_job
