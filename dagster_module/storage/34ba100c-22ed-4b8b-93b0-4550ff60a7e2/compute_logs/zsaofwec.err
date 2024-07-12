@@ -1,0 +1,7 @@
+[32m2024-07-12 01:51:07 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 34ba100c-22ed-4b8b-93b0-4550ff60a7e2 - 30848 - LOGS_CAPTURED - Started capturing logs in process (pid: 30848).
+[32m2024-07-12 01:51:07 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 34ba100c-22ed-4b8b-93b0-4550ff60a7e2 - 30848 - determine_partition_range - STEP_START - Started execution of step "determine_partition_range".
+[32m2024-07-12 01:51:11 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 34ba100c-22ed-4b8b-93b0-4550ff60a7e2 - 30848 - determine_partition_range - ASSET_MATERIALIZATION - Define range of date
+[32m2024-07-12 01:51:11 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 34ba100c-22ed-4b8b-93b0-4550ff60a7e2 - 30848 - determine_partition_range - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-07-12 01:51:11 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 34ba100c-22ed-4b8b-93b0-4550ff60a7e2 - 30848 - determine_partition_range - ASSET_MATERIALIZATION - Materialized value determine_partition_range.
+[32m2024-07-12 01:51:11 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 34ba100c-22ed-4b8b-93b0-4550ff60a7e2 - 30848 - determine_partition_range - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-07-12 01:51:12 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 34ba100c-22ed-4b8b-93b0-4550ff60a7e2 - 30848 - determine_partition_range - STEP_SUCCESS - Finished execution of step "determine_partition_range" in 4.87s.

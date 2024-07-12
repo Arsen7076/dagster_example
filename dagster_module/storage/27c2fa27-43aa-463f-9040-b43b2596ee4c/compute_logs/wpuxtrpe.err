@@ -1,0 +1,24 @@
+[32m2024-07-12 03:48:42 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - 71505 - LOGS_CAPTURED - Started capturing logs in process (pid: 71505).
+[32m2024-07-12 03:48:42 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - 71505 - determine_partition_range - STEP_START - Started execution of step "determine_partition_range".
+24/07/12 03:48:44 WARN Utils: Your hostname, user-Lenovo-V15-G2-ITL resolves to a loopback address: 127.0.1.1; using 192.168.1.78 instead (on interface wlp0s20f3)
+24/07/12 03:48:44 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+24/07/12 03:48:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/07/12 03:48:45 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[32m2024-07-12 03:48:49 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - 71505 - determine_partition_range - ASSET_MATERIALIZATION - Define range of date
+[32m2024-07-12 03:48:49 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - 71505 - determine_partition_range - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-07-12 03:48:49 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - determine_partition_range - Writing file at: /home/user/Desktop/ameria/v2/dagster_module/storage/determine_partition_range using PickledObjectFilesystemIOManager...
+[32m2024-07-12 03:48:49 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - 71505 - determine_partition_range - ASSET_MATERIALIZATION - Materialized value determine_partition_range.
+[32m2024-07-12 03:48:49 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - 71505 - determine_partition_range - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-07-12 03:48:49 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - 27c2fa27-43aa-463f-9040-b43b2596ee4c - 71505 - determine_partition_range - STEP_SUCCESS - Finished execution of step "determine_partition_range" in 6.35s.
+24/07/12 03:48:50 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:============================================>              (6 + 2) / 8]                                                                                24/07/12 03:48:52 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:48:54 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:48:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:48:57 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:48:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:49:00 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:49:02 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:49:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/12 03:49:06 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.

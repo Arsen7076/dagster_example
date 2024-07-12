@@ -1,0 +1,33 @@
+[32m2024-07-12 03:39:03 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 98617953-18b8-4d56-b070-b6ccba894411 - 65030 - LOGS_CAPTURED - Started capturing logs in process (pid: 65030).
+[32m2024-07-12 03:39:04 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 98617953-18b8-4d56-b070-b6ccba894411 - 65030 - determine_partition_range - STEP_START - Started execution of step "determine_partition_range".
+[32m2024-07-12 03:39:08 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 98617953-18b8-4d56-b070-b6ccba894411 - 65030 - determine_partition_range - ASSET_MATERIALIZATION - Define range of date
+[32m2024-07-12 03:39:08 +0400[0m - dagster - [34mDEBUG[0m - determine_range_job - 98617953-18b8-4d56-b070-b6ccba894411 - 65030 - determine_partition_range - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-07-12 03:39:08 +0400[0m - dagster - [34mERROR[0m - [31mdetermine_range_job - 98617953-18b8-4d56-b070-b6ccba894411 - 65030 - determine_partition_range - STEP_FAILURE - Execution of step "determine_partition_range" failed.
+
+dagster._core.errors.DagsterExecutionHandleOutputError: Error occurred while handling output "result" of step "determine_partition_range"::
+
+dagster._check.CheckError: Failure condition: The output has no asset partitions
+
+Stack Trace:
+  File "/home/user/anaconda3/envs/ameria/lib/python3.12/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/home/user/anaconda3/envs/ameria/lib/python3.12/site-packages/dagster/_utils/__init__.py", line 468, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/home/user/anaconda3/envs/ameria/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_step.py", line 751, in _gen_fn
+    gen_output = output_manager.handle_output(output_context, output.value)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/ameria/v2/dagster_module/io_manager.py", line 12, in handle_output
+    partition_date = context.asset_partition_key
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/anaconda3/envs/ameria/lib/python3.12/site-packages/dagster/_core/execution/context/output.py", line 457, in asset_partition_key
+    return self.step_context.asset_partition_key_for_output(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/anaconda3/envs/ameria/lib/python3.12/site-packages/dagster/_core/execution/context/system.py", line 1107, in asset_partition_key_for_output
+    start, end = self.asset_partition_key_range_for_output(output_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/anaconda3/envs/ameria/lib/python3.12/site-packages/dagster/_core/execution/context/system.py", line 1104, in asset_partition_key_range_for_output
+    check.failed("The output has no asset partitions")
+  File "/home/user/anaconda3/envs/ameria/lib/python3.12/site-packages/dagster/_check/__init__.py", line 1658, in failed
+    raise CheckError(f"Failure condition: {desc}")
+[0m

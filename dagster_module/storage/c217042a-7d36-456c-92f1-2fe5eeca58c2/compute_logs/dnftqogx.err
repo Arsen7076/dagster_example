@@ -1,0 +1,13 @@
+[32m2024-07-12 02:19:28 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - 41489 - LOGS_CAPTURED - Started capturing logs in process (pid: 41489).
+[32m2024-07-12 02:19:28 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - 41489 - determine_partition_range - STEP_START - Started execution of step "determine_partition_range".
+24/07/12 02:19:29 WARN Utils: Your hostname, user-Lenovo-V15-G2-ITL resolves to a loopback address: 127.0.1.1; using 192.168.1.78 instead (on interface wlp0s20f3)
+24/07/12 02:19:29 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+24/07/12 02:19:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[32m2024-07-12 02:19:34 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - 41489 - determine_partition_range - ASSET_MATERIALIZATION - Define range of date
+[32m2024-07-12 02:19:34 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - 41489 - determine_partition_range - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-07-12 02:19:34 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - determine_partition_range - Writing file at: /home/user/Desktop/ameria/v2/dagster_module/storage/determine_partition_range using PickledObjectFilesystemIOManager...
+[32m2024-07-12 02:19:34 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - 41489 - determine_partition_range - ASSET_MATERIALIZATION - Materialized value determine_partition_range.
+[32m2024-07-12 02:19:34 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - 41489 - determine_partition_range - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-07-12 02:19:34 +0400[0m - dagster - [34mDEBUG[0m - __ephemeral_asset_job__ - c217042a-7d36-456c-92f1-2fe5eeca58c2 - 41489 - determine_partition_range - STEP_SUCCESS - Finished execution of step "determine_partition_range" in 6.33s.

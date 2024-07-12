@@ -1,0 +1,7 @@
+[32m2024-07-12 02:13:43 +0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - e0ff2b87-f39b-499b-af07-9cfc06322a7b - 37721 - LOGS_CAPTURED - Started capturing logs in process (pid: 37721).
+[32m2024-07-12 02:13:43 +0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - e0ff2b87-f39b-499b-af07-9cfc06322a7b - 37721 - load_daily_partition - STEP_START - Started execution of step "load_daily_partition".
+[32m2024-07-12 02:13:45 +0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - e0ff2b87-f39b-499b-af07-9cfc06322a7b - 37721 - load_daily_partition - ASSET_MATERIALIZATION - Partitioned data for 2024-07-09
+[32m2024-07-12 02:13:45 +0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - e0ff2b87-f39b-499b-af07-9cfc06322a7b - 37721 - load_daily_partition - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-07-12 02:13:46 +0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - e0ff2b87-f39b-499b-af07-9cfc06322a7b - 37721 - load_daily_partition - ASSET_MATERIALIZATION - Materialized value load_daily_partition.
+[32m2024-07-12 02:13:46 +0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - e0ff2b87-f39b-499b-af07-9cfc06322a7b - 37721 - load_daily_partition - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-07-12 02:13:47 +0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - e0ff2b87-f39b-499b-af07-9cfc06322a7b - 37721 - load_daily_partition - STEP_SUCCESS - Finished execution of step "load_daily_partition" in 4.34s.
