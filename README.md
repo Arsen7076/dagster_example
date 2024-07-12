@@ -34,8 +34,8 @@ This project demonstrates a Dagster pipeline that includes backfilling historica
 1. **Clone the repository**:
 
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Arsen7076/dagster_example
+    cd dagster_example
     ```
 
 2. **Set up a virtual environment**:
