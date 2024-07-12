@@ -3,3 +3,4 @@ dagster-pyspark
 pandas
 pyarrow
 dagster-webserver
+dagster_aws
