@@ -16,10 +16,8 @@ class ParquetIOManager(IOManager):
                 path = self.base_path
             os.makedirs(path, exist_ok=True)
             
-            # Assume obj is a file path to the parquet data
             file_path = os.path.join(path, f"{context.step_key}.parquet")
-            obj_df = self.spark.read.parquet(obj)
-            obj_df.write.parquet(file_path)
+            obj.write.parquet(file_path)
         except Exception as e:
             print(f"Error handling output: {e}")
             print(context)
@@ -31,6 +29,9 @@ class ParquetIOManager(IOManager):
         else:
             file_path = os.path.join(self.base_path, f"{context.upstream_output.step_key}.parquet")
         return self.spark.read.parquet(file_path).toPandas()
+
+    def close(self):
+        self.spark.stop()
 
 @io_manager(config_schema={"base_path": Field(String)})
 def parquet_io_manager(init_context):
