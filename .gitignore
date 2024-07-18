@@ -1,4 +1,10 @@
 ./env
+./dagster_module/__pycache__
+./dagster_module/telemetry
+./dagster_module/history
+./dagster_module/logs
+./dagster_module/schedules
+./dagster_module/storage
 ./telemetry
 ./history
 ./logs
