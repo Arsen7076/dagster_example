@@ -1,1 +1,6 @@
 ./env
+./telemetry
+./history
+./logs
+./schedules
+./storage
